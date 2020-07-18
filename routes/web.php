@@ -13,13 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/user/{name}', function ($name) {
-    return "สวัสดีuser $name";
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// Route::get('/user/{name}', function ($name) {
+//     return "สวัสดีuser $name";
+// });
 
-Route::get('/plus/{num1}/{num2}', function ($num1, $num2) {
-   return $num1 + $num2;
-});
+// Route::get('/plus/{num1}/{num2}', function ($num1, $num2) {
+//    return $num1 + $num2;
+// });
+// Route::get('/showdetail/{name}/{age}/{message}', function ($name, $age,$message){
+//     return("สวัสดี $name คุณมีอายุ $age และคุณพูดว่า '$message'");
+// });
+Route::get('/user','UserController@index');
+Route::get('/user/show/{id}','UserController@show');
+Route::get('/user/update/{id}','UserController@update');
