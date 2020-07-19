@@ -26,6 +26,6 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/showdetail/{name}/{age}/{message}', function ($name, $age,$message){
 //     return("สวัสดี $name คุณมีอายุ $age และคุณพูดว่า '$message'");
 // });
-Route::get('/user','UserController@index');
-Route::get('/user/show/{id}','UserController@show');
-Route::get('/user/update/{id}','UserController@update');
+Route::get('/','HomeController@index');
+Route::get('/about','HomeController@about');
+Route::get('/contact','HomeController@contact');
