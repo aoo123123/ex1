@@ -24,7 +24,7 @@
             <tr>
                 <td>{{$item->id }}</td>
                 <td>{{$item->detail}}</td>
-                <td>Shopping</td>
+                <td>{{$item->category->name}}</td>
                 <td>@if($item->status==1)สำเร็จ @else ไม่สำเร็จ @endif</td>
                 <td>
                     <a href="#" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> edit</a>
