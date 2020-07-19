@@ -10,13 +10,13 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public function about()
+    public function create()
     {
-        return view('about');
+        return view('create');
     }
-    public function contact()
+    public function login()
     {
-        return view('contact');
+        return view('login');
     }
 
     public function greeting($name)

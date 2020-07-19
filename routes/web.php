@@ -27,5 +27,5 @@ use Illuminate\Support\Facades\Route;
 //     return("สวัสดี $name คุณมีอายุ $age และคุณพูดว่า '$message'");
 // });
 Route::get('/','HomeController@index');
-Route::get('/about','HomeController@about');
-Route::get('/contact','HomeController@contact');
+Route::get('/create','HomeController@create');
+Route::get('/login','HomeController@login');
